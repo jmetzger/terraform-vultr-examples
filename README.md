@@ -10,6 +10,7 @@ docker run --entrypoint="" -it hashicorp/terraform sh
 # in terminal
 cd
 git clone https://github.com/jmetzger/terraform-vultr-examples
+cd terraform-vultr-examples
 cd virtual-server
 ```
 
