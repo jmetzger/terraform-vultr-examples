@@ -20,7 +20,13 @@ export TF_VAR_VULTR_API_KEY=
 ```
 
 ```
+# Creating 
 terraform init
 terraform plan
 terraform apply -auto-approve
 ``` 
+
+```
+# Destroying it again
+terraform destroy -auto-approve
+```
