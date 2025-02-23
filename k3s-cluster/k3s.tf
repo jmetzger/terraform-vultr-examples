@@ -19,12 +19,12 @@ module "k3s" {
     # --node-name in additional_flags will be ignored
 
     for instance in vultr_instance.node_instances :
-    instance.id => {
+    instance.label => {
       ip = instance.main_ip
       connection = {
         timeout     = "60s"
         type        = "ssh"
-        host        = instance.ipv4_address
+        host        = instance.main_ip
         private_key = trimspace(tls_private_key.ed25519_provisioning.private_key_pem)
       }
 
