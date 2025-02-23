@@ -22,5 +22,5 @@ export TF_VAR_VULTR_API_KEY=
 ```
 terraform init
 terraform plan
-terraform apply
+terraform apply -auto-approve
 ``` 
