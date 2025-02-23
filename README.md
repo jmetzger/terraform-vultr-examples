@@ -1,6 +1,6 @@
 # Example for vultr 
 
- 1. virtual-server 
+## 1. virtual-server 
 
 ```
 docker run --entrypoint="" -it hashicorp/terraform sh
